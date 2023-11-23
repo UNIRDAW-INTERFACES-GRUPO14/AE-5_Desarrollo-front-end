@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/* ------------------- GENERAL ------------------- */
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #292929;
+}
+
+a:hover {
+	color: #79AE43;
+}
+
+dd {
+	margin-left: 0.625rem;
+}
+
+body {
+	color: #292929;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  min-height: 20rem;
+}
+
+/* ------ Titulos ------ */
+h2{
+  font-family: 'Lora', serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 130%;
+  background-image: linear-gradient(77deg,#009C7C 1.22%, #79AE43 98.4%);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+}
+
+/* ------ Botones ------ */
+.btn-primary{
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 45px;
+  border-radius: 38px;
+  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
+}
+
+.btn-primary:hover{
+  color: #79AE43;
+  border: 2px solid #009C7C;
+  background: transparent;
+  border: 2px solid #79AE43;
+}
+
+.btn-secondary{
+  font-size: 14px;
+  color: #79AE43;
+  font-weight: 600;
+  padding: 10px 45px;
+  border-radius: 38px;
+  background: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover{
+  color: white;;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn-outline-secondary{
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 45px;
+  border-radius: 38px;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn-outline-secondary:hover{
+  color: #79AE43;
+  background-color: white;
+  border: 2px solid white;
+}
+
+/* ------------------- TOPBAR ------------------- */
+
+.topbar{
+  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
+  color: white;
+  padding: 0.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seccion-redessociales {
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+  width: 50%;
+}
+
+.redessociales {
+	height: 2.125rem;
+  margin-right: 2rem;
+}
+
+.icono {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icono:hover{
+	color: #11334B;
+}
+
+.sesion {
+	display: flex;
+	text-align: center;
+	justify-content: flex-end;
+  width: 50%;
+}
+
+.sesion .btn{
+  margin-right: 2rem;
+}
+
+.sesion .btn:last-child{
+  margin-right: 0;
+}
+
+/* ------------------- HEADER ------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  box-shadow: 0px 4px 10px 0px rgba(41, 41, 41, 0.20);
+  z-index: 1;
+  position: sticky;
+}
+
+.logo-home{
+  width: 17%;
+}
+
+.search{
+  width: 30%;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+.search input[type="search"] {
+  height: 42px;
+  border-radius: 38px;
+  padding: 10px 29px;
+  border: 2px solid #CED4DA;
+  background: url(images/icon-search.svg) no-repeat 92% 50%;
+  background-size: 1.5rem;
+}
+
+input[type="search"]:focus-visible{
+  outline-color: #79AE43; 
+}
+
+.navbar{
+  width: 58%;
+}
+
+.lista-nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-item {
+  display: block;
+  width: 100%;
+  padding: 0 0.5rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.lista-item:hover .nav-link{
+  color: #292929;
+}
+
+.nav-link{
+  color: #292929;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2; 
+}
+
+.lista-item:hover {
+  color: #292929;
+  border-bottom: 2px solid #79AE43;
+}
+
+/* ------------------- PAGE HEADER ------------------- */
+
+.page-header{
+  color: white;
+  font-family: 'Lora', serif;
+  background-color: #046B56;
+  padding: 1rem 5%;
+}
+
+/* ------------------- MAIN ------------------- */
+
+
+
+
+
+/* ------------------- FOOTER ------------------- */
+.footer{
+  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
+  color: white;
+}
+
+.brand{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 5%;
+}
+
+.brand .brand-col{
+  width: 25%;
+  padding: 0 4%;
+}
+
+.brand .brand-col h3{
+  font-size: 16px;
+  line-height: 2.5;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+
+.brand .brand-col a{
+  color: white;
+  line-height: 2;
+}
+
+.brand .brand-col a:hover{
+  color: #11334B;
+}
+
+.legal{
+  color: white;
+  background-color: #11334B;
+  padding: 0.5rem 5%;
+}
+
+.legal ul{
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.legal a{
+  color: white; 
+}
+
+.legal a:hover{
+  color: #79AE43; 
+}
+
+
+
+/* ------------------- TABLET ------------------- */
+
+
+/* ------------------- MOBILE ------------------- */
