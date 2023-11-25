@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EquilibraMente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,21 +43,89 @@
     <!-- OPEN HEADER -->
     <header class="header">
         <a class="logo-home" href="index.html">
-            <img src="images/logo-equilibramente.png" alt="Logo Equilibramente">
+            <img class="logo-home-dk" src="images/logo-equilibramente-dk.png" alt="Logo Equilibramente">
+            <img class="logo-home-mb" src="images/logo-equilibramente-mb.png" alt="Logo Equilibramente">
         </a>
         <div class="search">
             <form class="">
                 <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
             </form>
+            <i class="bi bi-search"></i>
         </div>
-        <nav class="navbar">
-            <ul class="lista-nav">
-                <li class="lista-item"><a href="#" class="nav-link">Servicios</a></li>
-                <li class="lista-item"><a href="#" class="nav-link">Recursos</a></li>
-                <li class="lista-item"><a href="#" class="nav-link">Publicaciones</a></li>
-                <li class="lista-item"><a href="#" class="nav-link">Colabora</a></li>
-                <li class="lista-item"><a href="#" class="nav-link">Acerca de</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid justify-content-end p-0">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown item-list">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Profesionales</a></li>
+                                <li><a class="dropdown-item" href="#">Talleres</a></li>
+                                <li><a class="dropdown-item" href="#">Grupos de apoyo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown item-list">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Recursos
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Testimonios</a></li>
+                                <li><a class="dropdown-item" href="#">Consejos</a></li>
+                                <li><a class="dropdown-item" href="#">Artículos</a></li>
+                                <li><a class="dropdown-item" href="#">Campañas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown item-list">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Publicaciones
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Agenda</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown item-list">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Colabora
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Hazte socio/a</a></li>
+                                <li><a class="dropdown-item" href="#">Donativos</a></li>
+                                <li><a class="dropdown-item" href="#">Voluntariado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown item-list">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Acerca de
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                                <li><a class="dropdown-item" href="#">Colaboradores</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menu movil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
         </nav>
     </header>
     <!-- CLOSE HEADER -->
@@ -117,5 +187,5 @@
     </footer>
     <!-- CLOSE FOOTER -->
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

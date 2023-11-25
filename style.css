@@ -249,10 +249,19 @@ h2{
 }
 
 .logo-home{
-  width: 17%;
+  order: 1;
+  width: 194px
+}
+
+.logo-home-dk{
+  display: block;
+}
+.logo-home-mb{
+  display: none;
 }
 
 .search{
+  order: 2;
   width: 30%;
   padding: 0 0.5rem;
   text-align: center;
@@ -265,23 +274,20 @@ h2{
   background: url(images/icon-search.svg) no-repeat 92% 50%;
   background-size: 1.5rem;
 }
+.bi-search{
+  display: none;
+}
 
 input[type="search"]:focus-visible{
   outline-color: #38a461; 
 }
 
 .navbar{
+  order: 3;
   width: 58%;
 }
 
-.lista-nav {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-.lista-item {
+.item-list {
   display: block;
   width: 100%;
   padding: 0 0.5rem;
@@ -289,18 +295,11 @@ input[type="search"]:focus-visible{
   border-bottom: 2px solid transparent;
 }
 
-.lista-item:hover .nav-link{
-  color: #292929;
+.dropdown-toggle::after{
+  display: none;
 }
 
-.nav-link{
-  color: #292929;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2; 
-}
-
-.lista-item:hover {
+.item-list:hover {
   color: #292929;
   border: 2px solid;
   border-image-slice: 1;
@@ -309,6 +308,44 @@ input[type="search"]:focus-visible{
   border-left: 0;
   border-right: 0;
   border-top: 0;
+}
+
+.dropdown-menu{
+  top: 46px !important;
+  left: -30% !important;
+  margin: 0;
+  padding: 0;
+  border-image: linear-gradient(to left, #79AE43, #009C7C); 
+  border-image-slice: 1;
+  border-width: 2px; 
+  border-style: solid; 
+}
+
+.nav-link, .dropdown-item{
+  color: #292929;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2; 
+}
+
+.dropdown-item:hover{
+  color: white;
+  background: linear-gradient(to left, #009C7C, #79AE43);
+}
+
+.item-list:hover .nav-link, .nav-link:hover, .nav-link:focus{
+  color: #292929;
+}
+
+.navbar-toggler{
+  color: #11334B;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.navbar-toggler:focus, .navbar-toggler:focus-visible{
+  box-shadow: none;
+  outline: none;
 }
 
 /* ------------------- PAGE HEADER ------------------- */
@@ -364,7 +401,7 @@ input[type="search"]:focus-visible{
 .legal{
   color: white;
   background-color: #11334B;
-  padding: 0.5rem 5%;
+  padding: 0.05rem 5%;
 }
 
 .legal ul{
@@ -385,9 +422,106 @@ input[type="search"]:focus-visible{
   color: #38a461; 
 }
 
-
+@media screen and (max-width:1200px){
+  .topbar{
+    padding: 0.7rem 3%;
+  }
+  .header{
+    padding: 0.5rem 3%;
+  }
+  .brand{
+    padding: 2rem 3%;
+  }
+  .legal{
+    padding: 0.5rem 3%;
+  }
+}
 
 /* ------------------- TABLET ------------------- */
-
+@media screen and (max-width:991px){
+  .seccion-redessociales{
+    width: 30%;
+  }
+  .logo-home{
+    order: 2;
+  }
+  .logo-home-dk{
+    display: none;
+  }
+  .logo-home-mb{
+    display: block;
+    height: 88px;
+    margin: 0 auto;
+  }
+  .search{
+    order: 1;
+    width: 10%;
+    padding: 0;
+    text-align: left;
+  }
+  .search input[type="search"] {
+    display: none;
+  }
+  .bi-search{
+    display: block;
+    font-size: 1.75rem;
+    color: #11334B;
+  }
+  .navbar{
+    order: 3;
+    width: 10%;
+  }
+  .navbar-collapse{
+    position: absolute;
+    top: 77px;
+    width: 101vw;
+    right: -29px;
+    background: white;
+    border-image: linear-gradient(to left, #79AE43, #009C7C); 
+    border-image-slice: 1;
+    border-width: 2px; 
+    border-style: solid; 
+  }
+  .item-list{
+    padding: 0;
+    border: none;
+    
+  }
+  .item-list:hover {
+    border: none;
+  }
+  .item-list:active .nav-link, .item-list:hover .nav-link{
+    color: white;
+  }
+  .item-list:active, .item-list:hover {
+    background: linear-gradient(to left, #009C7C, #79AE43);
+    border: none;
+  }
+  .dropdown-menu{
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #009C7C, #79AE43);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 0 20%;
+    background-color: #F2F2F2;
+  }
+  .dropdown-item:hover{
+    background-image: linear-gradient(77deg,#009C7C 9.22%, #79AE43 33.4%);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+  }
+}
+  
 
 /* ------------------- MOBILE ------------------- */
+@media screen and (max-width:767px){
+  .seccion-redessociales{
+    display: none;
+  }
+  .topbar{
+    justify-content: center;
+  }
+}
