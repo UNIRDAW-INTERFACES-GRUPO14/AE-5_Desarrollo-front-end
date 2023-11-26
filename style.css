@@ -39,15 +39,24 @@ body {
 }
 
 /* ------ Titulos ------ */
-h2 {
+.seccion-titulo {
   font-family: 'Lora', serif;
-  font-size: 2.125rem;
+  font-size: 32px;
+  color: #11334B;
   font-style: italic;
   font-weight: 600;
-  line-height: 130%;
-  background-image: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.seccion-titulo span {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #79AE43, #009C7C);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
 /* ------ Botones ------ */
@@ -329,7 +338,7 @@ input[type="search"]:focus-visible {
   border: 2px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(to left, #009C7C, #79AE43);
+  border-image-source: linear-gradient(to left, #79AE43, #009C7C);
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -390,13 +399,17 @@ input[type="search"]:focus-visible {
 
 /* ------------------- MAIN ------------------- */
 /* ------ Hero ------ */
-.hero {
+.seccion-hero {
   overflow: hidden;
   padding: 0;
   text-align: center;
   width: 100%;
   height: 31.25rem;
   position: relative;
+}
+
+.seccion-hero .btn {
+  text-transform: uppercase;
 }
 
 .hero-img {
@@ -443,6 +456,71 @@ input[type="search"]:focus-visible {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
 }
+
+/* ------ CTA ---- */
+.seccion-cta {
+  background-color: #046B56;
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem 5%;
+}
+
+/* ------ Servicios ---- */
+.servicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:10%;
+}
+
+.servicio-body {
+  width: 50%;
+  padding-right: 10%;;
+}
+
+.servicio-body:nth-child(2) {
+  padding-left: 10%;;
+}
+
+.servicio-title {
+  color: #11334B;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.servicio-text {
+  font-size: 18px;
+  color: #292929;
+  margin-bottom: 1.5rem;
+}
+
+.servicio-image {
+  width: 50%;
+  height: 300px;
+}
+
+.servicio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicio .btn {
+  text-transform: uppercase;
+}
+
+.seccion-testimonios{
+  padding: 3rem 0;
+  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
+}
+
 
 
 /* ------------------- FOOTER ------------------- */
@@ -721,10 +799,16 @@ input[type="search"]:focus-visible {
   .topbar {
     justify-content: center;
   }
+
   /* ----- MAIN ----- */
-  .hero-text{
+  .hero {
+    height: 25.25rem;
+  }
+
+  .hero-text {
     display: none;
   }
+
   /* ----- FOOTER ----- */
   .brand-text,
   .footer .seccion-redessociales {
