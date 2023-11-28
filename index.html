@@ -127,6 +127,7 @@
 
     <!-- OPEN MAIN -->
     <main class="main">
+        <!-- OPEN HERO -->
         <section class="seccion-hero">
             <div class="hero-body">
                 <h2 class="hero-title">Contacta con profesionales</h2>
@@ -138,11 +139,13 @@
             </div>
             <img src="images/fondo-hero.png" alt="Imagen Hero Home" class="hero-img">
         </section>
-
+        <!-- CLOSE HERO -->
+        <!-- OPEN CTA -->
         <section class="seccion-cta">
             <h2>¡ATENCIÓN!: Última plaza para el taller del 31 de octubre a las 18 h</h2>
         </section>
-
+        <!-- CLOSE CTA -->
+        <!-- OPEN SERVICIOS -->
         <section class="seccion-servicios">
             <h2 class="seccion-titulo"><span>Nuestros servicios</span></h2>
             <article class="servicio">
@@ -179,42 +182,137 @@
                         class="servicio-img"></div>
             </article>
         </section>
-
-        <section class="seccion-testimonios">
+        <!-- CLOSE SERVICIOS -->
+        <!-- OPEN TESTIMONIOS -->
+        <section id="carouselExampleIndicators" class="carousel slide seccion-testimonios" data-bs-ride="carousel">
             <h2 class="seccion-titulo"><span>Nuestros casos de éxito</span></h2>
-            <div class="testimonios">
-                <i class="bi bi-chevron-left"></i>
-                <article class="testimonio">
+            
+            <div class="carousel-inner testimonios">
+              <div class="carousel-item active">
+                <div class="testimonio">
                     <img src="images/testimonio-1.png" alt="testimonio-1" class="testimonio-img">
                     <p class="testimonio-text">“Siempre he tenido complejos con mi aspecto y sentía que nadie entedía, pero gracias al apoyo de
-                        un profesional he conseguido superarlo.”</p>
-                </article>
-                <i class="bi bi-chevron-right"></i>
+                    un profesional he conseguido superarlo.”</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonio">
+                    <img src="images/testimonio-2.png" alt="testimonio-2" class="testimonio-img">
+                    <p class="testimonio-text">“Me ha guiado hacia hábitos saludables y simplificado mi dieta diaria. ¡Mi energía ha aumentado y me siento genial!”</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonio">
+                    <img src="images/testimonio-3.png" alt="testimonio-3" class="testimonio-img">
+                    <p class="testimonio-text">“La aplicación de nutrición es mi mejor aliada. Ha transformado mi relación con la comida, proporcionándome recetas personalizadas y seguimiento constante. ¡Resultados tangibles y duraderos!”</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonio">
+                    <img src="images/testimonio-4.png" alt="testimonio-4" class="testimonio-img">
+                    <p class="testimonio-text">“La app de nutrición ha cambiado mi vida. Con consejos prácticos y un seguimiento personalizado, me ha ayudado a adoptar hábitos alimenticios más saludables. ¡Ahora me siento lleno de energía y en el mejor estado físico y mental de mi vida!”</p>
+                </div>
+              </div>
             </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <i class="bi bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <i class="bi bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
         </section>
-
+        <!-- CLOSE TETSIMONIOS -->
+        <!-- OPEN NOSOTROS -->
         <section class="seccion-nosotros">
             <h2 class="seccion-titulo"><span>Sobre nosotros</span></h2>
+            <div class="nosotros-image">
+                <img src="images/sobre-nosotros.png" alt="Fotografía del equipo">
+            </div>
 
+            <div class="nosotros-features">
+                <div class="nosotros-feat">
+                    <div class="number">147</div>
+                    <div class="title">Profesionales</div>
+                </div>
+                <div class="nosotros-feat">
+                    <div class="number">34</div>
+                    <div class="title">Grupos de apoyo</div>
+                </div>
+                <div class="nosotros-feat">
+                    <div class="number">101</div>
+                    <div class="title">Talleres</div>
+                </div>
+                
+            </div>
         </section>
-
+        <!-- CLOSE NOSOTROS -->
+        <!-- OPEN BLOG -->
         <section class="seccion-blog">
-
+            <h3>Consejos y artículos</h3>
+            <p>En nuestro blog encontarás consejos y artículos sobre diferentes temáticas que te ayudarán a llevar una vida más sana.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
         </section>
-
+        <!-- CLOSE BLOG -->
+        <!-- OPEN TALLERES -->
         <section class="seccion-talleres">
             <h2 class="seccion-titulo"><span>Próximos talleres</span></h2>
-
+            <div class="talleres-row">
+                <div class="talleres-fechas">
+                    <div class="taller">
+                        <div class="taller-fecha">
+                            <h4 class="taller-number">20</h4>
+                            <p class="taller-mes">Nov</p>
+                        </div>
+                        <div class="taller-desciption">
+                            <h5 class="taller-title">Taller cocina asiática</h5>
+                            <p class="taller-text">Descubre nuevos sabores y aprende a disfrutar de la comida. Te enseñaremos a hacer gyozas, ramen y mochis.</p>
+                        </div>
+                    </div>
+                    <div class="taller">
+                        <div class="taller-fecha">
+                            <h4 class="taller-number">1</h4>
+                            <p class="taller-mes">Dic</p>
+                        </div>
+                        <div class="taller-desciption">
+                            <h5 class="taller-title">Taller de pasta casera</h5>
+                            <p class="taller-text">No hay nada como preparar algo con tus propias manos.</p>
+                        </div>
+                    </div>
+                    <div class="taller">
+                        <div class="taller-fecha">
+                            <h4 class="taller-number">21</h4>
+                            <p class="taller-mes">Dic</p>
+                        </div>
+                        <div class="taller-desciption">
+                            <h5 class="taller-title">Taller de batch cooking</h5>
+                            <p class="taller-text">¿No tienes tiempo de cocinar? Este taller te interesa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="talleres-calendar"></div>
+            </div>
         </section>
-
+        <!-- CLOSE TALLERES -->
+        <!-- OPEN NEWSLETTER -->
         <section class="seccion-newsletter">
-
+            <div class="newsletter-body">
+                <h3>¡No te pierdas nada!</h3>
+                <p>Suscribete a nuestra newsletter para no perderte nada: noticias, talleres... 
+                    <strong>¡Y mucho más!</strong></p>
+            </div>
+            <div class="newsletter-btn">
+                <a href="#" class="btn btn-contrast">¡Suscríbete!</a>
+            </div>
         </section>
-        <!--<section>
-            <h2>Hola</h2>
-             <a href="#" class="btn btn-primary">Registrarse</a>
-            <a href="#" class="btn btn-outline-primary">Inicio sesión</a> 
-        </section>-->
+        <!-- CLOSE NEWSLETTER -->
 
     </main>
     <!-- CLOSE MAIN -->
