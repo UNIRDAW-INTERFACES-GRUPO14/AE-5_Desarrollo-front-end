@@ -129,31 +129,108 @@
 
     <!-- OPEN MAIN -->
     <main class="container">
+        <div class="frame">
+            <div class="buscador">
+                <form class="search-form">
+                    <input type="search" class="form-control" placeholder="Buscar grupos..." aria-label="Search">
+                    
+                </form>
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="estilo">
+                <div class="BOT-n">Filtrar</div>
+                <img class="funnel-fill" src="/images/Vector.png" />
+            </div>
+        </div>
         <div class="main">
             <!-- Formulario -->
-            <section id="inscripcion" class="seccion-cta">
-                <h2>Inscripción</h2>
-                <form action="#">
-                    <label for="pregunta1">Primera pregunta:</label>
-                    <input type="text" id="pregunta1" name="pregunta1">
-
-                    <label for="pregunta2">Segunda pregunta:</label>
-                    <input type="text" id="pregunta2" name="pregunta2">
-
-                    <label for="pregunta3">Tercera pregunta:</label>
-                    <input type="text" id="pregunta3" name="pregunta3">
-
-                    <input type="submit" class="btn btn-primary" value="Enviar">
+            
+            <h3>Formulario de Inscripcion</h3>
+                <form action="/tu-ruta-de-envio" method="POST" class="formulario">
+                    
+                    <div class="text-wrapper"></div>
+                    
+                    <!-- Primer campo de pregunta -->
+                    <div class="div">Primera pregunta:</div>
+                    <div class="textarea">
+                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    </div>
+                
+                    <!-- Segundo campo de pregunta -->
+                    <div class="div">Segunda pregunta:</div>
+                    <div class="textarea">
+                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    </div>
+                
+                    <!-- Tercer campo de pregunta -->
+                    <div class="div">Tercera pregunta:</div>
+                    <div class="textarea">
+                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    </div>
+                
+                    <!-- Botón de envío -->
+                    <div class="estilo">
+                        <div class="BOT-n">Enviar</div>
+                    </div>
                 </form>
-            </section>
+            
 
             <!-- Imagen lateral -->
             <div class="imagen-lateral">
-                <img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen">
+                <img src="/images/Imagen.png" alt="Descripción de la imagen">
             </div>
         </div>
     </main>
     <!-- CLOSE MAIN -->
+    <div class="grupos-mas">
+        <div class="text-wrapper">Grupos más demandados</div>
+        <div class="frame">
+          <div class="paginacion">
+            <img class="arrow-right" src="img/image.svg" />
+            <div class="paginacion">
+              <div class="rectangle"></div>
+              <div class="div">1</div>
+            </div>
+            <div class="paginacion">
+              <div class="rectangle-2"></div>
+              <div class="text-wrapper-2">2</div>
+            </div>
+            <div class="paginacion">
+              <div class="rectangle-2"></div>
+              <div class="text-wrapper-2">3</div>
+            </div>
+            <img class="arrow-right" src="img/arrow-right.svg" />
+          </div>
+          <div class="grupo">
+            <div class="estilo"><div class="BOT-n">Inscribirse</div></div>
+            <p class="p">
+              <span class="span">Grupo de Apoyo Individual Virtual para 18+ <br /><br /></span>
+              <span>2º y 4º Domingo, 6:00 – 7:00pm (MT) <br /></span>
+              <span class="text-wrapper-4">Dónde: Zoom <br /></span>
+              <span class="text-wrapper-5">Tlf: 638526321</span>
+            </p>
+          </div>
+          <div class="grupo-2">
+            <div class="estilo"><div class="BOT-n">Inscribirse</div></div>
+            <p class="p">
+              <span class="span">Grupo de Apoyo Individual Virtual para 18+ <br /></span>
+              <span>2º y 4º Viernes, 9:00 – 10:00pm (MT) <br /></span>
+              <span class="text-wrapper-5">Dónde: Zoom <br /></span>
+              <span class="text-wrapper-5">Tlf: 639785632</span>
+            </p>
+          </div>
+          <div class="grupo-3">
+            <div class="estilo"><div class="BOT-n">Inscribirse</div></div>
+            <p class="p">
+              <span class="span">Grupo de Apoyo Individual Presencial para 18+ <br /></span>
+              <span>2º y 4º Sábado, 6:00 – 7:00pm (MT) <br /></span>
+              <span class="text-wrapper-4">Dónde: Parque del Retiro, Madrid <br /></span>
+              <span class="text-wrapper-5">Tlf: 648752139</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
 
     <!-- OPEN FOOTER -->
     <footer class="footer">

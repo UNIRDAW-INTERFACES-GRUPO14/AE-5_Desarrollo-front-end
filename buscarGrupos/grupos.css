@@ -1,0 +1,227 @@
+.frame {
+    display: flex;
+    width: 1440px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 98px;
+    position: relative;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--base-colorswhite);
+    border-radius: 38px;
+    border: 2px solid;
+    border-color: var(--bootstrapforminput-border);
+    padding: 10px 29px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.bi.bi-search {
+    /* Estilo para el icono de búsqueda, ajusta según sea necesario */
+}
+
+.estilo {
+    display: inline-flex;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+    padding: 10px 50px;
+    border-radius: 38px;
+    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+}
+
+.BOT-n {
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-blanco);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.funnel-fill {
+    width: 24px;
+    height: 24px;
+    /* Estilo para la imagen de embudo, ajusta según sea necesario */
+}
+/*Formulario*/
+.formulario {
+    display: inline-flex;
+    flex-direction: column;
+    height: auto; /* Cambiado a "auto" para que la altura se ajuste dinámicamente */
+    align-items: flex-end;
+    gap: 19px;
+    position: relative;
+}
+
+.formulario .text-wrapper {
+    position: relative;
+    width: 461px;
+    height: 45px;
+    margin-top: -1px;
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--contrast-colorsblue);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    white-space: nowrap;
+    font-style: var(--h3-font-style);
+}
+
+.formulario .div {
+    position: relative;
+    width: 618px;
+    height: 26px;
+    font-family: var(--body-text-16px-font-family);
+    font-weight: var(--body-text-16px-font-weight);
+    color: var(--contrast-colorsblue);
+    font-size: var(--body-text-16px-font-size);
+    letter-spacing: var(--body-text-16px-letter-spacing);
+    line-height: var(--body-text-16px-line-height);
+    font-style: var(--body-text-16px-font-style);
+}
+
+.formulario .textarea {
+    display: flex;
+    width: 618px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 23px 30px 23px 40px;
+    position: relative;
+    background-color: var(--base-colorswhite);
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: var(--bootstrapforminput-border);
+}
+
+.formulario .textarea input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--body-text-16px-font-family);
+    font-weight: var(--body-text-16px-font-weight);
+    color: var(--gray-colorsgray-1);
+    font-size: var(--body-text-16px-font-size);
+    letter-spacing: var(--body-text-16px-letter-spacing);
+    line-height: var(--body-text-16px-line-height);
+    white-space: nowrap;
+}
+
+.formulario .estilo {
+    display: flex;
+    width: 174px;
+    height: 41px;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    padding: 10px 45px;
+    position: relative;
+    border-radius: 38px;
+    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+}
+
+.formulario .BOT-n {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-blanco);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+/*Grupos mas demandados*/
+.grupos-mas {
+    position: relative;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+  }
+  
+  .grupos-mas .text-wrapper {
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--contrast-colorsblue);
+    font-size: var(--h3-font-size);
+    text-align: center;
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    white-space: nowrap;
+  }
+  
+  .grupos-mas .frame {
+    width: 100%; /* O ajusta el ancho según sea necesario */
+  }
+  
+  .grupos-mas .paginacion {
+    display: flex;
+    align-items: center;
+  }
+  
+  .grupos-mas .arrow-right {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .grupos-mas .rectangle,
+  .grupos-mas .rectangle-2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 38px;
+  }
+  
+  .grupos-mas .rectangle {
+    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+  }
+  
+  .grupos-mas .div,
+  .grupos-mas .text-wrapper-2 {
+    width: 56px;
+    height: 49px;
+    font-family: var(--body-text-bold-16px-font-family);
+    font-weight: var(--body-text-bold-16px-font-weight);
+    color: var(--variable-collection-blanco);
+    font-size: var(--body-text-bold-16px-font-size);
+    text-align: center;
+    letter-spacing: var(--body-text-bold-16px-letter-spacing);
+    line-height: var(--body-text-bold-16px-line-height);
+    font-style: var(--body-text-bold-16px-font-style);
+  }
+  
+  .grupos-mas .grupo {
+    width: 100%; /* O ajusta el ancho según sea necesario */
+    height: auto; /* Ajusta la altura según sea necesario */
+    background-color: var(--base-colorswhite);
+  }
+  
+  .grupos-mas .estilo {
+    display: flex;
+    width: 100%; /* O ajusta el ancho según sea necesario */
+    height: 41px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 38px;
+    background:
+  
