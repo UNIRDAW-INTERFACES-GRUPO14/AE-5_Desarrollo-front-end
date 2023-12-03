@@ -1215,7 +1215,7 @@ td.prox {
   }
 
   /* ----- TOPBAR ----- */
-  .btn {
+  .topbar .btn {
     padding: 0.438rem 1.875rem;
   }
 

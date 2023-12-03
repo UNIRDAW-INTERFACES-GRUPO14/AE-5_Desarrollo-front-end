@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="/buscarGrupos/grupos.css">
 </head>
 
-<body id="home">
+<body id="grupos">
     <!-- OPEN TOPBAR -->
     <div class="topbar">
         <div class="seccion-redessociales">
@@ -63,9 +64,11 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Profesionales/profesionales.html">Profesionales</a></li>
-                                <li><a class="dropdown-item" href="#">Talleres</a></li>
-                                <li><a class="dropdown-item" href="/buscarGrupos/buscargrupo.html">Grupos de apoyo</a></li>
+                                <li><a class="dropdown-item" href="/Profesionales/profesionales.html">Profesionales</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Talleres/talleres.html">Talleres</a></li>
+                                <li><a class="dropdown-item" href="/buscarGrupos/buscargrupo.html">Grupos de apoyo</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown item-list">
@@ -131,64 +134,96 @@
 
     <!-- OPEN MAIN -->
     <main class="container">
-        <div class="frame">
-            <div class="buscador">
-                <form class="search-form">
-                    <input type="search" class="form-control" placeholder="Buscar grupos..." aria-label="Search">
-                    
-                </form>
-                <i class="bi bi-search"></i>
-            </div>
-            <div class="estilo">
-                <div class="BOT-n">Filtrar</div>
-                <img class="funnel-fill" src="/images/Vector.png" />
-            </div>
+        <div class="search2">
+            <form class="">
+                <input type="search" class="form-control" placeholder="Buscar taller..." aria-label="Search">
+            </form>
+            <i class="bi bi-search"></i>
+            <a class="filtro-btn">
+                Filtrar
+                <i class="fas fa-filter"></i>
+            </a>
         </div>
         <div class="main">
             <!-- Formulario -->
-            
-            <h3>Formulario de Inscripcion</h3>
-                <form action="/tu-ruta-de-envio" method="POST" class="formulario">
-                    
-                    <div class="text-wrapper"></div>
-                    
+
+            <section class="seccion-form">
+                <form action="#" class="formulario">
+                    <h3 class="form-title">Formulario de Inscripcion</h3>
                     <!-- Primer campo de pregunta -->
-                    <div class="div">Primera pregunta:</div>
-                    <div class="textarea">
-                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    <div class="form-pregunta">
+                        <label class="form-text" for="pregunta1">Primera pregunta:</label>
+                        <textarea id="w3review" name="pregunta1" rows="3" cols="50"
+                            placeholder="Escribe brevemente tu respuesta..."></textarea>
                     </div>
-                
+
                     <!-- Segundo campo de pregunta -->
-                    <div class="div">Segunda pregunta:</div>
-                    <div class="textarea">
-                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    <div class="form-pregunta">
+                        <label class="form-text" for="pregunta2">Segunda pregunta:</label>
+                        <textarea id="w3review" name="pregunta2" rows="3" cols="50"
+                            placeholder="Escribe brevemente tu respuesta..."></textarea>
                     </div>
-                
+
                     <!-- Tercer campo de pregunta -->
-                    <div class="div">Tercera pregunta:</div>
-                    <div class="textarea">
-                        <input type="text" class="form-control" placeholder="Escribe brevemente tu respuesta...">
+                    <div class="form-pregunta">
+                        <label class="form-text" for="pregunta3">Tercera pregunta:</label>
+                        <textarea id="w3review" name="pregunta3" rows="3" cols="50"
+                            placeholder="Escribe brevemente tu respuesta..."></textarea>
                     </div>
-                
+
                     <!-- Botón de envío -->
-                    <div class="estilo">
-                        <div class="BOT-n">Enviar</div>
+                    <div class="form-action">
+                        <a href="#" class="btn btn-primary">Enviar</a>
                     </div>
                 </form>
-            
 
-            <!-- Imagen lateral -->
-            <div class="imagen-lateral">
-                <img src="/images/Imagen.png" alt="Descripción de la imagen">
+
+                <!-- Imagen lateral -->
+                <div class="imagen-lateral">
+                    <img src="/images/Imagen.png" alt="Descripción de la imagen">
+                </div>
+            </section>
+
+        </div>
+
+        <div class="grupos-demandados">
+            <div class="grupos-title">Grupos más demandados</div>
+
+            <div class="grupos">
+                <div class="grupo-1">
+                    <h3 class="grupo-title">Grupo de Apoyo Individual Virtual para 18+</h3>
+                    <p class="grupo-text">2º y 4º Domingo, 6:00 – 7:00pm (MT)</p>
+                    <p class="grupo-text"><strong>Dónde:</strong> Zoom</p>
+                    <p class="grupo-text"><strong>Tlf:</strong> 638526321</p>
+                </div>
+                <div class="grupo-2">
+                    <h3 class="grupo-title">Grupo de Apoyo Individual Virtual para 18+</h3>
+                    <p class="grupo-text">2º y 4º Viernes, 
+                        9:00 – 10:00pm (MT)</p>
+                    <p class="grupo-text"><strong>Dónde:</strong> Zoom</p>
+                    <p class="grupo-text"><strong>Tlf:</strong> 639785632</p>
+                </div>
+                <div class="grupo-3">
+                    <h3 class="grupo-title">Grupo de Apoyo Individual Presencial para 18+</h3>
+                    <p class="grupo-text">2º y 4º Sábado, 
+                        6:00 – 7:00pm (MT)</p>
+                    <p class="grupo-text"><strong>Dónde:</strong> Paque del retiro, Madrid</p>
+                    <p class="grupo-text"><strong>Tlf:</strong> 648752139</p>
+                </div>
             </div>
-            <div class="label">
-                <div class="text-wrapper">Grupos más demandados</div>
-            </div>
+            <section class="paginacion">
+                <a href="#"><img class="arrow-right" src="images/arrow-right-1.svg" /></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><img class="arrow-right" src="images/arrow-right.svg" /></a>
+              </section>
+
         </div>
     </main>
     <!-- CLOSE MAIN -->
-    
-      
+
+
 
     <!-- OPEN FOOTER -->
     <footer class="footer">
@@ -218,7 +253,7 @@
                 <h3>Servicios</h3>
                 <ul>
                     <li><a href="/Profesionales/profesionales.html#">Profesionales</a></li>
-                    <li><a href="#">Talleres</a></li>
+                    <li><a href="/Talleres/talleres.html">Talleres</a></li>
                     <li><a href="/buscarGrupos/buscargrupo.html">Grupos de apoyo</a></li>
                 </ul>
             </div>
