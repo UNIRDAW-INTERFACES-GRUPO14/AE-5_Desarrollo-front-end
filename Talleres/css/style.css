@@ -793,160 +793,97 @@ input[type="search"]:focus-visible {
 .legal a:hover {
   color: #38a461;
 }
+/* Estilo para los talleres */
+.taller {
+  width: 30%; /* Ajusta el ancho según tus preferencias */
+  float: left; /* Hace que los talleres floten a la izquierda */
+  margin: 10px; /* Agrega márgenes entre los talleres para mejorar la apariencia */
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto */
+}
 
-.talleres {
+/* Borra el flotador después de cada fila de talleres */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo para las imágenes dentro de los talleres */
+.taller img {
+  width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+  height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+/* Estilo para el título y la descripción dentro de los talleres */
+.taller .TITULO, .taller .text-wrapper {
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; /* Agrega márgenes superior e inferior para mejorar la apariencia */
+}
+.workshop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.workshop {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.workshop img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.workshop-content {
+  padding: 15px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
   position: relative;
-  width: 1440px;
-  height: 727px;
-}
-
-.talleres .taller {
-  top: 15px;
-  left: 913px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
-}
-
-.talleres .overlap-group {
-  position: absolute;
-  width: 370px;
-  height: 82px;
-  top: 246px;
-  left: 20px;
-}
-
-.talleres .frame {
-  position: absolute;
-  width: 174px;
-  height: 31px;
-  top: 46px;
-  left: 196px;
-}
-
-.talleres .text-wrapper {
-  position: absolute;
-  width: 370px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--base-colorsblack);
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-#nombre-page{
-  font-family: 'Trebuchet MS';
+  font-size: 30px;
 }
 
 
-.talleres .TITULO {
-  position: absolute;
-  width: 368px;
-  top: 216px;
-  left: 20px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--base-colorsblack);
-  font-size: 21px;
-  letter-spacing: 0;
-  line-height: normal;
+.rating .checked {
+  color: #009C7C;
 }
 
-.talleres .image {
-  width: 390px;
-  height: 192px;
-  top: 17px;
-  position: absolute;
-  left: 20px;
-  object-fit: cover;
+.rating2 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+
 }
 
-.talleres .div {
-  top: 15px;
-  left: 93px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
+.rating2 .checked{
+  color: #009C7C;
 }
 
-.talleres .estilo-vida-gente {
-  position: absolute;
-  width: 370px;
-  height: 190px;
-  top: 18px;
-  left: 20px;
-  object-fit: cover;
+.rating3 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
 }
 
-.talleres .taller-2 {
-  top: 15px;
-  left: 503px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
+.rating3 .checked{
+  color: #009C7C;
 }
-
-.talleres .img {
-  position: absolute;
-  width: 390px;
-  height: 190px;
-  top: 18px;
-  left: 20px;
-  object-fit: cover;
-}
-
-.talleres .taller-3 {
-  top: 364px;
-  left: 93px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
-}
-
-.talleres .image-2 {
-  width: 370px;
-  height: 184px;
-  top: 20px;
-  position: absolute;
-  left: 20px;
-  object-fit: cover;
-}
-
-.talleres .taller-4 {
-  top: 364px;
-  left: 503px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
-}
-
-.talleres .image-3 {
-  width: 370px;
-  height: 185px;
-  top: 19px;
-  position: absolute;
-  left: 20px;
-  object-fit: cover;
-}
-
-.talleres .taller-5 {
-  top: 364px;
-  left: 913px;
-  position: absolute;
-  width: 410px;
-  height: 349px;
-}
-
-.talleres .image-4 {
-  width: 390px;
-  height: 187px;
-  top: 21px;
-  position: absolute;
-  left: 20px;
-  object-fit: cover;
+.valoracion{
+  float: right;
+  margin-right: 20px;
 }
 
 
@@ -1098,11 +1035,15 @@ input[type="search"]:focus-visible {
   .brand-items {
     padding: 0 1.5rem;
   }
+
 }
 
 
 /* ------------------- MOBILE ------------------- */
 @media screen and (max-width:767px) {
+  .workshop {
+    width: calc(50% - 20px);
+  }
 
   /* ----- TOPBAR ----- */
   .seccion-redessociales {
@@ -1140,6 +1081,9 @@ input[type="search"]:focus-visible {
 
 @media screen and (max-width:575px) {
 
+  .workshop {
+    width: 100%;
+  }
   /* ----- GENERAL ----- */
   .seccion-titulo {
     font-size: 26px;
