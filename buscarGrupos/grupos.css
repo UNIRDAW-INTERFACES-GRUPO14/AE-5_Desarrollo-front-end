@@ -1,0 +1,216 @@
+.frame {
+    display: flex;
+    width: 1440px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 98px;
+    position: relative;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--base-colorswhite);
+    border-radius: 38px;
+    border: 2px solid;
+    border-color: var(--bootstrapforminput-border);
+    padding: 10px 29px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.bi.bi-search {
+    
+}
+
+.estilo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 50px;
+  border-radius: 38px;
+  background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+}
+
+.BOT-n {
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-blanco);
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin: 0; 
+}
+
+.funnel-fill {
+    width: 24px;
+    height: 24px;
+    
+}
+/*Formulario*/
+.formulario {
+    display: inline-flex;
+    flex-direction: column;
+    height: auto; 
+    align-items: flex-end;
+    gap: 19px;
+    position: relative;
+}
+
+.formulario .text-wrapper {
+    position: relative;
+    width: 461px;
+    height: 45px;
+    margin-top: -1px;
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--contrast-colorsblue);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    white-space: nowrap;
+    font-style: var(--h3-font-style);
+}
+
+.formulario .div {
+    position: relative;
+    width: 618px;
+    height: 26px;
+    font-family: var(--body-text-16px-font-family);
+    font-weight: var(--body-text-16px-font-weight);
+    color: var(--contrast-colorsblue);
+    font-size: var(--body-text-16px-font-size);
+    letter-spacing: var(--body-text-16px-letter-spacing);
+    line-height: var(--body-text-16px-line-height);
+    font-style: var(--body-text-16px-font-style);
+}
+
+.formulario .textarea {
+    display: flex;
+    width: 618px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 23px 30px 23px 40px;
+    position: relative;
+    background-color: var(--base-colorswhite);
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: var(--bootstrapforminput-border);
+}
+
+.formulario .textarea input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--body-text-16px-font-family);
+    font-weight: var(--body-text-16px-font-weight);
+    color: var(--gray-colorsgray-1);
+    font-size: var(--body-text-16px-font-size);
+    letter-spacing: var(--body-text-16px-letter-spacing);
+    line-height: var(--body-text-16px-line-height);
+    white-space: nowrap;
+}
+
+.formulario .estilo {
+    display: flex;
+    width: 174px;
+    height: 41px;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    padding: 10px 45px;
+    position: relative;
+    border-radius: 38px;
+    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+}
+
+.formulario .BOT-n {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--variable-collection-blanco);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+/*imagen lateral*/
+.imagen-lateral {
+  float: right;
+  width: 40%; 
+}
+
+.imagen-lateral img {
+  width: 100%;
+
+/*Grupos mas demandados*/
+/* Ajuste para centrar el .label */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {* Ocupa todo el espacio disponible */
+  background-color: #f1f1f1; 
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 200px; 
+}
+
+.label .text-wrapper {
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: var(--contrast-colorsblue);
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  white-space: nowrap;
+  font-style: var(--h3-font-style);
+  border-top: 1px solid #ccc;
+}
+
+/*Responsive*/
+@media (min-width: 768px) {
+  .frame {
+      padding: 20px 40px;
+  }
+
+  .estilo {
+      gap: 20px;
+  }
+
+  .main {
+      gap: 40px;
+  }
+
+  .imagen-lateral {
+      flex: 0 0 calc(30% - 20px);
+      max-width: calc(30% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .imagen-lateral {
+      display: none;
+  }
+}
