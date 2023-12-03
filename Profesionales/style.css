@@ -391,8 +391,7 @@ input[type="search"]:focus-visible {
 
 /* ------------------- BUSCADOR---------------- */
 
-
-.search{
+.search2{
 display: flex;
 width: 1310px;
 padding: 10px 98px;
@@ -401,6 +400,16 @@ align-items: flex-start;
 gap: 15px;
 padding-top: 50px;
 }
+
+.search2 input[type="search"] {
+  height: 2.625rem;
+  border-radius: 2.375rem;
+  padding: 0.625rem 1.813rem;
+  border: 2px solid #CED4DA;
+  background: url(images/icon-search.svg) no-repeat 92% 50%;
+  background-size: 1.5rem;
+}
+
 
 .filtro-btn {
   display: flex;
@@ -453,6 +462,7 @@ padding-top: 50px;
   justify-content: center;
   align-items: center;
   margin: 0 100px;
+  
 }
 
 .carta{
@@ -477,8 +487,7 @@ padding-top: 50px;
 }
 
 .carta a:hover {
-  color: white;
-  background-color: rgb(0, 156, 124); /* Cambia el color de fondo cuando el enlace se encuentra en estado de hover */
+  color: rgb(0, 156, 124);
 }
  
 .paginacion{
@@ -498,9 +507,47 @@ padding-top: 50px;
   margin-right: 20px;
 }
 
-.estrella-icono{
-  float: right;
+/*-------------------   VALORACION ESTRELLAS  -------------------*/
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
 }
+
+
+.rating .checked {
+  color: #009C7C;
+}
+
+.rating2 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+
+}
+
+.rating2 .checked{
+  color: #009C7C;
+}
+
+.rating3 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+}
+
+.rating3 .checked{
+  color: #009C7C;
+}
+
 
 /*-------------------   PAGINACION  -------------------*/
 
@@ -510,7 +557,6 @@ padding-top: 50px;
   text-align: center; /* Centrar los elementos en la sección */
   padding-bottom: 50px;
 }
-
 
 .paginacion a {
   
@@ -538,8 +584,6 @@ padding-top: 50px;
   margin: 0 5px; /* Ajusta el margen entre los elementos */
   border: 2px solid rgb(0, 156, 124);
 }
-
-
 
 
 /* ------------------- FOOTER ------------------- */
@@ -632,6 +676,11 @@ padding-top: 50px;
     padding: 0 3%;
   }
 
+  /*--------*/
+  .search2 {
+    padding: 0 3%;
+  }
+
   /* ----- FOOTER ----- */
   .brand {
     padding: 2rem 3%;
@@ -663,7 +712,7 @@ padding-top: 50px;
   }
 
   .carta-profesional {
-    flex-basis: 50%; /* Una carta por fila */
+    flex-basis: 100%; /* Una carta por fila */
   }
 
 
@@ -685,7 +734,18 @@ padding-top: 50px;
     text-align: left;
   }
 
+  .search2 {
+    order: 1;
+    width: 10%;
+    padding: 0;
+    text-align: left;
+  }
+
   .search input[type="search"] {
+    display: none;
+  }
+
+  .search2 input[type="search"] {
     display: none;
   }
 
@@ -747,6 +807,36 @@ padding-top: 50px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  /* ------- MAIN ------*/
+
+   .search2 {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        padding: 10px 98px;
+    }
+
+    .search2 input[type="search"] {
+        width: auto;
+    }
+
+    .filtro-btn {
+        width: auto;
+    }
+
+    .cartas-profesionales {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .carta {
+        margin: 0 20px;
+    }
+
+    .valoracion {
+        margin-top: 0;
+    }
 
   /* ----- FOOTER ----- */
   .brand-text,
