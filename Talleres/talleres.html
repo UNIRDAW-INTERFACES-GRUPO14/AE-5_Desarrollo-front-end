@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,8 +16,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="home">
+<body id="talleres">
     <!-- OPEN TOPBAR -->
     <div class="topbar">
         <div class="seccion-redessociales">
@@ -35,15 +36,17 @@
             </a>
         </div>
         <div class="sesion">
-            <a href="#" class="btn btn-outline-secondary">Inicio sesión</a>
-            <a href="#" class="btn btn-secondary">Registrarse</a>
+            <a class="logued">
+                <i class="fas fa-user"></i>
+                Mi cuenta
+            </a>
         </div>
     </div>
     <!-- CLOSE TOPBAR -->
 
     <!-- OPEN HEADER -->
     <header class="header">
-        <a class="logo-home" href="index.html">
+        <a class="logo-home" href="/index.html">
             <img class="logo-home-dk" src="images/logo-equilibramente-dk.png" alt="Logo Equilibramente">
             <img class="logo-home-mb" src="images/logo-equilibramente-mb.png" alt="Logo Equilibramente">
         </a>
@@ -63,9 +66,9 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Profesionales</a></li>
-                                <li><a class="dropdown-item" href="#">Talleres</a></li>
-                                <li><a class="dropdown-item" href="#">Grupos de apoyo</a></li>
+                                <li><a class="dropdown-item" href="/Profesionales/profesionales.html">Profesionales</a></li>
+                                <li><a class="dropdown-item" href="/Talleres/talleres.html">Talleres</a></li>
+                                <li><a class="dropdown-item" href="/buscarGrupos/buscargrupo.html">Grupos de apoyo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown item-list">
@@ -129,15 +132,15 @@
 
     <!-- OPEN MAIN -->
     <main class="container">
-        <div class="search-down">
+        <div class="search2">
             <form class="">
-                <input type="search-down" class="form-control" placeholder="Buscar taller..." aria-label="Search">
+                <input type="search" class="form-control" placeholder="Buscar profesional..." aria-label="Search">
             </form>
-            <i class="bi bi-search-down"></i>
-            <div class="filtro-btn">
+            <i class="bi bi-search"></i>
+            <a class="filtro-btn">
                 Filtrar
                 <i class="fas fa-filter"></i>
-            </div>
+            </a>
         </div>
         <article class="main">
             <section>
@@ -262,12 +265,12 @@
             </section>
         </article>
         <section class="paginacion">
-        <a href="#"><img class="arrow-right" src="../images/arrow-right-1.svg" /></a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#"><img class="arrow-right" src="../images/arrow-right.svg" /></a>
-      </section>
+            <a href="#"><img class="arrow-right" src="images/arrow-right-1.svg" /></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><img class="arrow-right" src="images/arrow-right.svg" /></a>
+          </section>
     </main>
     <!-- CLOSE MAIN -->
 
@@ -298,9 +301,9 @@
             <div class="col-12 col-sm-4 col-lg-3 brand-items">
                 <h3>Servicios</h3>
                 <ul>
-                    <li><a href="#">Profesionales</a></li>
-                    <li><a href="#">Talleres</a></li>
-                    <li><a href="#">Grupos de apoyo</a></li>
+                    <li><a href="/Profesionales/profesionales.html#">Profesionales</a></li>
+                    <li><a href="/Talleres/talleres.html">Talleres</a></li>
+                    <li><a href="/buscarGrupos/buscargrupo.html">Grupos de apoyo</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-4 col-lg-3 brand-items">

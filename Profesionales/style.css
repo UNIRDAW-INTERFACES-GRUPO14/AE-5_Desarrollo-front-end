@@ -1,404 +1,17 @@
 @charset "UTF-8";
 
-/* ------------------- GENERAL ------------------- */
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+/* ------------------- PROFEIONALES ---------------- */
+.fa-filter {
+  margin-left: 0.5rem;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #292929;
-}
-
-a:hover {
-  color: #38a461;
-}
-
-dd {
-  margin-left: 0.625rem;
-}
-
-body {
-  color: #292929;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  min-height: 20rem;
-}
-
-/* ------ Titulos ------ */
-h2 {
-  font-family: 'Lora', serif;
-  font-size: 2.125rem;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 130%;
-  background-image: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* ------ Botones ------ */
-.btn {
-  border-radius: 2.375rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.625rem 2.813rem;
-  text-align: center;
-  max-width: 200px;
-}
-
-/* Estilo 1 */
-.btn-primary {
-  position: relative;
-  display: block;
-  color: white;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  background-color: #38a461;
-  background-clip: padding-box;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  left: -0.688rem;
-  top: -0.813rem;
-  width: 13.438rem;
-  height: 4.75rem;
-  background-image: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  z-index: -1;
-  transition: border-color 0.2s;
-}
-
-.btn-primary::after {
-  content: '';
-  position: absolute;
-  left: 100%;
-  width: 13.438rem;
-  height: 4.75rem;
-  background-color: white;
-  transform-origin: center;
-  z-index: -1;
-}
-
-.btn-primary:hover {
-  color: #38a461;
-  border: 2px solid #38a461;
-}
-
-.btn-primary:hover::after {
-  transform: translate(-94%, -44%) scale(1);
-}
-
-.btn-primary:active {
-  color: white;
-}
-
-.btn-primary:focus {
-  color: #38a461;
-}
-
-.btn-primary:focus::before {
-  border-color: white;
-}
-
-/* PRUEBA */
-.btn-outline-primary {
-  position: relative;
-  display: block;
-  color: #38a461;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  background-color: white;
-  background-clip: padding-box;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.btn-outline-primary::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  border: 2px solid transparent;
-  background-image: linear-gradient(white, white), linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  background-clip: padding-box, border-box;
-  background-repeat: repeat-x;
-  background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
-  background-position: center;
-  border-radius: 2.375rem;
-  z-index: -1;
-  transition: border-color 0.2s;
-}
-
-.btn-outline-primary::after {
-  content: '';
-  position: absolute;
-  left: 100%;
-  width: 215px;
-  height: 76px;
-  background-image: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  transform-origin: center;
-  z-index: -1;
-}
-
-.btn-outline-primary:hover {
-  color: white;
-}
-
-.btn-outline-primary:hover::after {
-  transform: translate(-94%, -44%) scale(1);
-}
-
-.btn-outline-primary:active {
-  color: #38a461;
-}
-
-.btn-outline-primary:focus {
-  color: white;
-}
-
-.btn-outline-primary:focus::before {
-  border-color: #009C7C;
-}
-
-/* Estilo 2 */
-.btn-secondary {
-  color: #38a461;
-  background: white;
-  border: 2px solid white;
-}
-
-.btn-secondary:hover {
-  color: white;
-  background: transparent;
-  border: 2px solid white;
-}
-
-/* Estilo 3 */
-.btn-contrast {
-  color: #11334B;
-  background: transparent;
-  border: 2px solid #11334B;
-}
-
-.btn-contrast:hover {
-  color: white;
-  background: #11334B;
-  border: 2px solid #11334B;
-}
-
-/* Estilo 4 */
-.btn-outline-secondary {
-  color: white;
-  background: transparent;
-  border: 2px solid white;
-}
-
-.btn-outline-secondary:hover {
-  color: #38a461;
-  background-color: white;
-  border: 2px solid white;
-}
-
-/* ------------------- TOPBAR ------------------- */
-
-.topbar {
-  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  color: white;
-  padding: 0.7rem 5%;
+.search2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.seccion-redessociales {
-  display: flex;
-  text-align: center;
-  justify-content: flex-start;
-  width: 50%;
-}
-
-.redessociales {
-  height: 2.125rem;
-  margin-right: 2rem;
-}
-
-.icono {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.icono:hover {
-  color: #11334B;
-}
-
-.sesion .btn {
-  margin-right: 2rem;
-}
-
-.sesion .btn:last-child {
-  margin-right: 0;
-}
-
-/* ------------------- HEADER ------------------- */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 5%;
-  box-shadow: 0px 4px 10px 0px rgba(41, 41, 41, 0.20);
-  z-index: 1;
-  position: sticky;
-}
-
-.logo-home {
-  order: 1;
-  width: 12.5rem;
-}
-
-.logo-home-dk {
-  display: block;
-}
-
-.logo-home-mb {
-  display: none;
-}
-
-.search {
-  order: 2;
-  width: 30%;
-  padding: 0 5%;
-  text-align: center;
-  margin-right: 2rem;
-}
-
-.search input[type="search"] {
-  height: 2.625rem;
-  border-radius: 2.375rem;
-  padding: 0.625rem 1.813rem;
-  border: 2px solid #CED4DA;
-  background: url(images/icon-search.svg) no-repeat 92% 50%;
-  background-size: 1.5rem;
-}
-
-.bi-search {
-  display: none;
-}
-
-input[type="search"]:focus-visible {
-  outline-color: #38a461;
-}
-
-.navbar {
-  order: 3;
-  width: 58%;
-}
-
-.item-list {
-  display: block;
   width: 100%;
-  padding: 0 0.5rem;
-  text-align: center;
-  border-bottom: 2px solid transparent;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
-
-.item-list:hover {
-  color: #292929;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, #009C7C, #79AE43);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-}
-
-.dropdown-menu {
-  top: 2.875rem !important;
-  left: -30% !important;
-  margin: 0;
-  padding: 0;
-  border-image: linear-gradient(to left, #79AE43, #009C7C);
-  border-image-slice: 1;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.nav-link,
-.dropdown-item {
-  color: #292929;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 2;
-}
-
-.dropdown-item:hover {
-  color: white;
-  background: linear-gradient(to left, #009C7C, #79AE43);
-}
-
-.item-list:hover .nav-link,
-.nav-link:hover,
-.nav-link:focus {
-  color: #292929;
-}
-
-.navbar-toggler {
-  color: #11334B;
-  font-size: 2rem;
-  padding: 0;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:focus-visible {
-  box-shadow: none;
-  outline: none;
-}
-
-/* ------------------- PAGE HEADER ------------------- */
-
-.page-header {
-  color: white;
-  font-family: 'Lora', serif;
-  background-color: #046B56;
-  padding: 1rem 5%;
-}
-
-/* ------------------- MAIN ------------------- */
-
-/* ------------------- BUSCADOR---------------- */
-
-.search2{
-display: flex;
-width: 100%;
-padding: 10px 0;
-justify-content: flex-end;
-align-items: flex-start;
-gap: 15px;
-padding-top: 50px;
+  padding: 10px 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .search2 input[type="search"] {
@@ -410,18 +23,15 @@ padding-top: 50px;
   background-size: 1.5rem;
 }
 
-
 .filtro-btn {
   display: flex;
   align-items: center;
-  padding: 10px 98px;
+  padding: 0.5rem 2.813rem;
   background: linear-gradient(to left, #009C7C, #79AE43);
   color: #fff;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  padding-left: 40px;
-  padding-right: 40px;
   border: 2px solid;
 }
 
@@ -430,42 +40,20 @@ padding-top: 50px;
   background-color: white;
   border: 2px solid #38a461;
   background: transparent;
-  
-}
-
-
-.BOT-n {
-  position: relative;
-  width: fit-content;
-  font-family: "Roboto", Helvetica;
-  font-weight: 600;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.funnel-fill {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  margin-top: -1px;
-  margin-bottom: -1px;
 }
 
 /* ------------------- CARTAS PROFESIONALES -------------------*/
 
-.cartas-profesionales{
+.cartas-profesionales {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 
-.carta-1, .carta-2, .carta-3{
+.carta-1,
+.carta-2,
+.carta-3 {
   position: relative;
   width: 330px;
   height: 339px;
@@ -473,47 +61,72 @@ padding-top: 50px;
   box-shadow: 0px 4px 10px 0px rgba(41, 41, 41, 0.2);
 }
 
-.carta-1 a, .carta-2 a, .carta-3 a, p{
+.carta-1 a,
+.carta-2 a,
+.carta-3 a,
+p {
   margin-left: 20px;
 }
 
-.carta-1 a, .carta-2 a, .carta-3 a{
+.carta-1 a,
+.carta-2 a,
+.carta-3 a {
   display: inline-block;
-  font-size: 1.5rem; 
-  font-weight: bold; 
-  color: #333; 
-  text-decoration: none; 
-  
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+
 }
 
-.carta-1 a:hover, .carta-2 a:hover, .carta-3 a:hover {
+.carta-1 a:hover,
+.carta-2 a:hover,
+.carta-3 a:hover {
   color: rgb(0, 156, 124);
 }
- 
-.paginacion{
+
+.paginacion {
   text-align: center;
 }
+
 .paginacion a {
   display: inline-block;
-  margin: 0 5px; /* Esto agrega un poco de espacio entre los enlaces para que no estén pegados */
+  margin: 0 5px;
+  /* Esto agrega un poco de espacio entre los enlaces para que no estén pegados */
 }
-.cartas-profesionales .carta-1, .cartas-profesionales .carta-2, .cartas-profesionales .carta-3 {
-  margin:  5%; /* Agrega un margen entre las cartas para mejorar el espaciado */
+
+.paginacion a:first-child,
+.paginacion a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+#profesionales .container {
+  width: 100%;
+}
+
+.cartas-profesionales .carta-1,
+.cartas-profesionales .carta-2,
+.cartas-profesionales .carta-3 {
+  margin: 5%;
+  /* Agrega un margen entre las cartas para mejorar el espaciado */
   justify-content: space-between;
 }
 
-.carta-1 img, .carta-2 img, .carta-3 img{
+.carta-1 img,
+.carta-2 img,
+.carta-3 img {
   width: 100%;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.valoracion{
+.valoracion {
   float: right;
   margin-right: 20px;
 }
 
 /*-------------------   VALORACION ESTRELLAS  -------------------*/
-
 
 .rating {
   unicode-bidi: bidi-override;
@@ -534,10 +147,9 @@ padding-top: 50px;
   text-align: center;
   position: relative;
   font-size: 30px;
-
 }
 
-.rating2 .checked{
+.rating2 .checked {
   color: #009C7C;
 }
 
@@ -549,401 +161,145 @@ padding-top: 50px;
   font-size: 30px;
 }
 
-.rating3 .checked{
+.rating3 .checked {
   color: #009C7C;
 }
-
 
 /*-------------------   PAGINACION  -------------------*/
 
 .paginacion {
   display: block;
-  text-align: center; /* Centrar los elementos en la sección */
+  text-align: center;
+  /* Centrar los elementos en la sección */
   padding-bottom: 50px;
 }
 
 .paginacion a {
   color: black;
-  display: inline-block; 
+  display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
-  
 }
 
 .paginacion a:nth-child(2) {
   background: linear-gradient(to left, #009C7C, #79AE43);
   color: white;
   border-radius: 50%;
-  margin: 0 5px; 
+  margin: 0 5px;
   border: 2px solid rgb(0, 156, 124);
 }
 
-.paginacion a:nth-child(3), .paginacion a:nth-child(4) {
-  background-color:  white;
+.paginacion a:nth-child(3),
+.paginacion a:nth-child(4) {
+  background-color: white;
   color: rgb(0, 156, 124);
-  border-radius: 50%; 
-  margin: 0 5px; /* Ajusta el margen entre los elementos */
+  border-radius: 50%;
+  margin: 0 5px;
+  /* Ajusta el margen entre los elementos */
   border: 2px solid rgb(0, 156, 124);
 }
 
-
-/* ------------------- FOOTER ------------------- */
-.footer {
-  background: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
-  color: white;
-}
-
-.brand {
-  display: flex;
-  flex-direction: row;
-  padding: 3rem 5%;
-}
-
-.brand-items {
-  padding: 0 3rem;
-}
-
-.brand .brand-items h3 {
-  font-size: 1rem;
-  line-height: 2.5;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: 1px solid white;
-}
-
-.brand .brand-items a {
-  font-size: 0.875rem;
-  color: white;
-  line-height: 2;
-}
-
-.brand .brand-items a:hover {
-  color: #11334B;
-}
-
-.brand-text {
-  font-size: 0.875rem;
-  margin-top: 1rem;
-}
-
-.footer .seccion-redessociales {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.footer .redessociales {
-  margin: 0 auto;
-}
-
-.legal {
-  color: white;
-  background-color: #11334B;
-  padding: 0.05rem 5%;
-}
-
-.legal ul {
-  font-size: 0.875rem;
-  font-weight: 400;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-}
-
-.legal a {
-  color: white;
-}
-
-.legal a:hover {
-  color: #38a461;
-}
 
 @media screen and (max-width:1200px) {
-
-  /* ----- TOPBAR ----- */
-  .topbar {
-    padding: 0.7rem 3%;
-  }
-
-  /* ----- HEADER ----- */
-  .header {
-    padding: 0.5rem 3%;
-  }
-
-  .search {
-    padding: 0 3%;
-  }
-
-  /*--------*/
   .search2 {
     padding: 0 3%;
   }
 
-  .carta-3{
+  .carta-1,
+  .carta-2,
+  .carta-3 {
+    height: 360px;
+  }
+
+  .carta-3 {
     display: none;
-  }
-
-  /* ----- FOOTER ----- */
-  .brand {
-    padding: 2rem 3%;
-  }
-
-  .legal {
-    padding: 0.5rem 3%;
   }
 }
 
 /* ------------------- TABLET ------------------- */
 @media screen and (max-width:991px) {
 
-  /* ----- TOPBAR ----- */
-  .seccion-redessociales {
-    width: 30%;
-  }
-
-  /* ----- HEADER ----- */
-  .logo-home {
-    order: 2;
-  }
-
   .cartas-profesionales {
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
-    margin: 0; /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en filas adicionales */
+    margin: 0;
+    /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
   }
 
   .carta-profesional {
-    flex-basis: 100%; /* Una carta por fila */
+    flex-basis: 100%;
+    /* Una carta por fila */
   }
 
-  .carta-2{
+  .cartas-profesionales .carta-1{
+    margin-bottom: 10%;
+  }
+
+  .carta-2 {
     display: none;
-  }
-
-  .logo-home-dk {
-    display: none;
-  }
-
-  .logo-home-mb {
-    display: block;
-    height: 5.5rem;
-    margin: 0 auto;
-  }
-
-  .search {
-    order: 1;
-    width: 10%;
-    padding: 0;
-    text-align: left;
   }
 
   .search2 {
-    order: 1;
-    width: 10%;
-    padding: 0;
-    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 10px 0;
   }
 
-  .search input[type="search"] {
+  .search2 .form-control {
     display: none;
   }
 
   .search2 input[type="search"] {
-    display: none;
+    width: auto;
   }
 
-  .bi-search {
-    display: block;
-    font-size: 1.75rem;
-    color: #11334B;
+  .filtro-btn {
+    width: auto;
   }
 
-  .navbar {
-    order: 3;
-    width: 10%;
+  .cartas-profesionales {
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 77px;
-    width: 94vw;
-    background: white;
-    border:none;
+  .carta {
+    margin: 0 20px;
   }
 
-  .item-list {
-    padding: 0;
-    border: none;
-    background-color: #F2F2F2;
+  .valoracion {
+    margin-top: 0;
   }
 
-  .item-list:hover {
-    border: none;
-  }
-
-  .item-list:active .nav-link,
-  .item-list:hover .nav-link {
-    color: white;
-  }
-
-  .nav-link.show,
-  .item-list:hover {
-    color: white;
-    background: linear-gradient(to left, #009C7C, #79AE43);
-    border: none;
-  }
-
-  .dropdown-menu {
-    border: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(to left, #009C7C, #79AE43);
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    padding: 0 20%;
-    background-color: white;
-  }
-
-  .dropdown-item:hover {
-    background-image: linear-gradient(77deg, #009C7C 9.22%, #79AE43 33.4%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* ------- MAIN ------*/
-
-   .search2 {
-        flex-direction: row;
-        justify-content: flex-end;
-        width: auto;
-        padding: 10px 98px;
-    }
-
-    .search2 input[type="search"] {
-        width: auto;
-    }
-
-    .filtro-btn {
-        width: auto;
-    }
-
-    .cartas-profesionales {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .carta {
-        margin: 0 20px;
-    }
-
-    .valoracion {
-        margin-top: 0;
-    }
-
-  /* ----- FOOTER ----- */
-  .brand-text,
-  .footer .seccion-redessociales {
-    width: 30%;
-    margin: 1rem auto;
-  }
-
-  .footer .seccion-redessociales {
-    margin-bottom: 2rem;
-  }
-
-  .brand-items {
-    padding: 0 1.5rem;
-  }
 }
 
 
 /* ------------------- MOBILE ------------------- */
 @media screen and (max-width:767px) {
 
-  /* ----- TOPBAR ----- */
-  .seccion-redessociales {
-    display: none;
-  }
-
-  .topbar {
-    justify-content: center;
-  }
-
-  /* -----MAIN -------- */
-
   .cartas-profesionales {
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
-    margin: 0; /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en filas adicionales */
+    margin: 0;
+    /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
   }
 
   .carta-profesional {
-    flex-basis: 100%; /* Una carta por fila */
-  }
-
-  
-
-  /* ----- FOOTER ----- */
-  .brand-text,
-  .footer .seccion-redessociales {
-    width: 50%;
-    margin: 1rem auto;
-  }
-
-  .legal li {
-    font-size: 0.813rem;
-    font-weight: 300;
-    padding: 0;
-    text-align: center;
+    flex-basis: 100%;
+    /* Una carta por fila */
   }
 }
 
 @media screen and (max-width:575px) {
-
-  /* ----- TOPBAR ----- */
-  .btn {
-    padding: 0.438rem 1.875rem;
-  }
-
-  .sesion .btn {
-    margin-right: 0;
-  }
-
-  .seccion-redessociales {
-    display: none;
-  }
-
-  .topbar {
-    justify-content: center;
-  }
-
-  /* -----MAIN -------- */
-
   .cartas-profesionales {
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
-    margin: 0; /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en filas adicionales */
+    margin: 0;
+    /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
   }
 
   .carta-profesional {
-    flex-basis: 100%; /* Una carta por fila */
-  }
-
-  /* ----- FOOTER ----- */
-  .brand-text,
-  .footer .seccion-redessociales {
-    width: 70%;
-    margin: 1rem auto;
-  }
-
-  .brand-items {
-    padding: 0 3rem;
-  }
-
-  .legal li {
-    font-size: 0.813rem;
-    font-weight: 300;
-    padding: 0;
+    flex-basis: 100%;
+    /* Una carta por fila */
   }
 }
