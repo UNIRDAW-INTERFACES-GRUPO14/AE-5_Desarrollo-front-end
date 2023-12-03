@@ -18,6 +18,7 @@ a {
 
 a:hover {
   color: #38a461;
+  transition: all 0.3s ease;
 }
 
 dd {
@@ -258,6 +259,7 @@ body {
 
 .icono:hover {
   color: #11334B;
+  transition: all 0.3s ease;
 }
 
 .sesion .btn {
@@ -292,6 +294,11 @@ body {
 
 .logo-home-mb {
   display: none;
+}
+
+.logo-home:hover{
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 .search {
@@ -675,7 +682,7 @@ input[type="search"]:focus-visible {
 }
 
 .blog-item{
-  
+  position: relative;
 }
 
 .blog-layer{
