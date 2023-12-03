@@ -714,11 +714,126 @@ input[type="search"]:focus-visible {
 }
 
 /* ------ Talleres ---- */
+.seccion-talleres {
+  margin: 0 10% 4rem;
+}
+.talleres-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.talleres-fechas{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.talleres-calendar{
+  width: 50%;
+}
+
+.taller:first-child{
+  width: 100%;
+}
+
+.taller{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-bottom: 2rem;
+}
+
+.taller-fecha{
+  border-right: 1px solid #11334B; 
+  padding-right: 1rem;
+  width: 6rem;
+}
+
+.taller-number{
+  width: 6rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%; /* 95.2px */
+  background-image: linear-gradient(77deg, #009C7C 1.22%, #79AE43 98.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.taller-mes{
+  width: 6rem;
+  color: #292929;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+}
+
+.taller-description{
+  padding: 0 15px;
+}
+
+.taller-title{
+  color: #11334B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+}
+
+.taller-text{
+  color: #292929;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+
+.calendar{
+  width: 100%;
+  margin-left: 2rem;
+  box-shadow: 0px 4px 10px 0px rgba(41, 41, 41, 0.20);
+}
+
+.calendar-title{
+  background-color: #11334B;
+  font-size: 24px;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+th, td{
+  text-align: center;
+  line-height: 2.75rem;
+}
+
+th.day{
+  background-color: white;
+}
+
+tr{
+  background: rgba(4, 107, 86, 0.20);
+}
+
+td.prox{
+  background-color: #11334B;
+  color: white;
+}
 
 /* ------ Newsletter ---- */
 .seccion-newsletter {
   background-color: #046b563d;
-  padding: 40px 200px;
+  padding: 40px 10%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -848,6 +963,10 @@ input[type="search"]:focus-visible {
     width: 50%;
   }
 
+  .taller{
+    width: 100%;
+  }
+
   /* ----- FOOTER ----- */
   .brand {
     padding: 2rem 3%;
@@ -956,6 +1075,27 @@ input[type="search"]:focus-visible {
     width: 60%;
   }
 
+  .nosotros-image{
+    display: none;
+  }
+
+  .nosotros-features{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nosotros-feat{
+    margin-bottom: 2rem;
+  }
+
+  .talleres-fechas{
+    width: 100%;
+  }
+
+  .talleres-calendar{
+    display: none;
+  }
+
   /* ----- FOOTER ----- */
   .brand-text,
   .footer .seccion-redessociales {
@@ -994,6 +1134,16 @@ input[type="search"]:focus-visible {
 
   .testimonios {
     width: 75%;
+  }
+
+  .seccion-newsletter{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-body{
+    margin-bottom: 1.5rem;
+    width: 100%;
   }
 
   /* ----- FOOTER ----- */
