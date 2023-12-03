@@ -393,8 +393,8 @@ input[type="search"]:focus-visible {
 
 .search2{
 display: flex;
-width: 1310px;
-padding: 10px 98px;
+width: 100%;
+padding: 10px 0;
 justify-content: flex-end;
 align-items: flex-start;
 gap: 15px;
@@ -461,11 +461,11 @@ padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 100px;
+  justify-content: space-between;
   
 }
 
-.carta{
+.carta-1, .carta-2, .carta-3{
   position: relative;
   width: 330px;
   height: 339px;
@@ -473,11 +473,11 @@ padding-top: 50px;
   box-shadow: 0px 4px 10px 0px rgba(41, 41, 41, 0.2);
 }
 
-.carta a, p{
+.carta-1 a, .carta-2 a, .carta-3 a, p{
   margin-left: 20px;
 }
 
-.carta a{
+.carta-1 a, .carta-2 a, .carta-3 a{
   display: inline-block;
   font-size: 1.5rem; 
   font-weight: bold; 
@@ -486,7 +486,7 @@ padding-top: 50px;
   
 }
 
-.carta a:hover {
+.carta-1 a:hover, .carta-2 a:hover, .carta-3 a:hover {
   color: rgb(0, 156, 124);
 }
  
@@ -497,9 +497,14 @@ padding-top: 50px;
   display: inline-block;
   margin: 0 5px; /* Esto agrega un poco de espacio entre los enlaces para que no estén pegados */
 }
-.cartas-profesionales .carta {
-  margin:  64px; /* Agrega un margen entre las cartas para mejorar el espaciado */
+.cartas-profesionales .carta-1, .cartas-profesionales .carta-2, .cartas-profesionales .carta-3 {
+  margin:  5%; /* Agrega un margen entre las cartas para mejorar el espaciado */
   justify-content: space-between;
+}
+
+.carta-1 img, .carta-2 img, .carta-3 img{
+  width: 100%;
+  object-fit: cover;
 }
 
 .valoracion{
@@ -552,14 +557,12 @@ padding-top: 50px;
 /*-------------------   PAGINACION  -------------------*/
 
 .paginacion {
-  
   display: block;
   text-align: center; /* Centrar los elementos en la sección */
   padding-bottom: 50px;
 }
 
 .paginacion a {
-  
   color: black;
   display: inline-block; 
   padding: 8px 16px;
@@ -571,7 +574,6 @@ padding-top: 50px;
   background: linear-gradient(to left, #009C7C, #79AE43);
   color: white;
   border-radius: 50%;
-  padding: 15px;  
   margin: 0 5px; 
   border: 2px solid rgb(0, 156, 124);
 }
@@ -579,8 +581,7 @@ padding-top: 50px;
 .paginacion a:nth-child(3), .paginacion a:nth-child(4) {
   background-color:  white;
   color: rgb(0, 156, 124);
-  border-radius: 50%;
-  padding: 15px; 
+  border-radius: 50%; 
   margin: 0 5px; /* Ajusta el margen entre los elementos */
   border: 2px solid rgb(0, 156, 124);
 }
@@ -681,6 +682,10 @@ padding-top: 50px;
     padding: 0 3%;
   }
 
+  .carta-3{
+    display: none;
+  }
+
   /* ----- FOOTER ----- */
   .brand {
     padding: 2rem 3%;
@@ -704,8 +709,6 @@ padding-top: 50px;
     order: 2;
   }
 
-
-
   .cartas-profesionales {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
     margin: 0; /* Elimina el margen horizontal para adaptarse al ancho de la pantalla */
@@ -715,7 +718,9 @@ padding-top: 50px;
     flex-basis: 100%; /* Una carta por fila */
   }
 
-
+  .carta-2{
+    display: none;
+  }
 
   .logo-home-dk {
     display: none;
@@ -877,6 +882,8 @@ padding-top: 50px;
   .carta-profesional {
     flex-basis: 100%; /* Una carta por fila */
   }
+
+  
 
   /* ----- FOOTER ----- */
   .brand-text,
