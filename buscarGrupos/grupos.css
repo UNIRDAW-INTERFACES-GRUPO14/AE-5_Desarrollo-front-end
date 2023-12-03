@@ -32,40 +32,41 @@
 }
 
 .bi.bi-search {
-    /* Estilo para el icono de búsqueda, ajusta según sea necesario */
+    
 }
 
 .estilo {
-    display: inline-flex;
-    align-items: left;
-    justify-content: left;
-    gap: 20px;
-    padding: 10px 50px;
-    border-radius: 38px;
-    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 50px;
+  border-radius: 38px;
+  background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
 }
 
 .BOT-n {
-    font-family: "Roboto-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--variable-collection-blanco);
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-blanco);
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin: 0; 
 }
 
 .funnel-fill {
     width: 24px;
     height: 24px;
-    /* Estilo para la imagen de embudo, ajusta según sea necesario */
+    
 }
 /*Formulario*/
 .formulario {
     display: inline-flex;
     flex-direction: column;
-    height: auto; /* Cambiado a "auto" para que la altura se ajuste dinámicamente */
+    height: auto; 
     align-items: flex-end;
     gap: 19px;
     position: relative;
@@ -152,76 +153,64 @@
     line-height: normal;
     white-space: nowrap;
 }
+
+/*imagen lateral*/
+.imagen-lateral {
+  float: right;
+  width: 40%; 
+}
+
+.imagen-lateral img {
+  width: 100%;
+
 /*Grupos mas demandados*/
-.grupos-mas {
-    position: relative;
-    width: 100%; /* Ajusta el ancho según sea necesario */
+/* Ajuste para centrar el .label */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {* Ocupa todo el espacio disponible */
+  background-color: #f1f1f1; 
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 200px; 
+}
+
+.label .text-wrapper {
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: var(--contrast-colorsblue);
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  white-space: nowrap;
+  font-style: var(--h3-font-style);
+  border-top: 1px solid #ccc;
+}
+
+/*Responsive*/
+@media (min-width: 768px) {
+  .frame {
+      padding: 20px 40px;
   }
-  
-  .grupos-mas .text-wrapper {
-    font-family: var(--h3-font-family);
-    font-weight: var(--h3-font-weight);
-    color: var(--contrast-colorsblue);
-    font-size: var(--h3-font-size);
-    text-align: center;
-    letter-spacing: var(--h3-letter-spacing);
-    line-height: var(--h3-line-height);
-    white-space: nowrap;
+
+  .estilo {
+      gap: 20px;
   }
-  
-  .grupos-mas .frame {
-    width: 100%; /* O ajusta el ancho según sea necesario */
+
+  .main {
+      gap: 40px;
   }
-  
-  .grupos-mas .paginacion {
-    display: flex;
-    align-items: center;
+
+  .imagen-lateral {
+      flex: 0 0 calc(30% - 20px);
+      max-width: calc(30% - 20px);
   }
-  
-  .grupos-mas .arrow-right {
-    width: 48px;
-    height: 48px;
+}
+@media (max-width: 600px) {
+  .imagen-lateral {
+      display: none;
   }
-  
-  .grupos-mas .rectangle,
-  .grupos-mas .rectangle-2 {
-    width: 48px;
-    height: 48px;
-    border-radius: 38px;
-  }
-  
-  .grupos-mas .rectangle {
-    background: linear-gradient(180deg, rgb(0, 156, 124) 0%, rgb(121, 174, 67) 100%);
-  }
-  
-  .grupos-mas .div,
-  .grupos-mas .text-wrapper-2 {
-    width: 56px;
-    height: 49px;
-    font-family: var(--body-text-bold-16px-font-family);
-    font-weight: var(--body-text-bold-16px-font-weight);
-    color: var(--variable-collection-blanco);
-    font-size: var(--body-text-bold-16px-font-size);
-    text-align: center;
-    letter-spacing: var(--body-text-bold-16px-letter-spacing);
-    line-height: var(--body-text-bold-16px-line-height);
-    font-style: var(--body-text-bold-16px-font-style);
-  }
-  
-  .grupos-mas .grupo {
-    width: 100%; /* O ajusta el ancho según sea necesario */
-    height: auto; /* Ajusta la altura según sea necesario */
-    background-color: var(--base-colorswhite);
-  }
-  
-  .grupos-mas .estilo {
-    display: flex;
-    width: 100%; /* O ajusta el ancho según sea necesario */
-    height: 41px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 38px;
-    background:
-  
+}
